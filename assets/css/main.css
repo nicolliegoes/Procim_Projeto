@@ -26,8 +26,15 @@
 	body {
 		line-height: 1;
 	}
+
+	footer {
+		background-color: rgba(18, 93, 11, 0.85);
+		padding: 20px;
+		text-align: center;
+	}
+
 .image.fit img {
-	width: 100%;
+	width: 30%;
 	height: auto;
 }
 	ol, ul {
@@ -1802,7 +1809,7 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 	}
 
 	a {
-		color: #5AA6ED;
+		color: #fff;
 	}
 
 	strong, b {
@@ -2365,10 +2372,12 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 			display: block;
 			margin: 0 0 2rem 0;
 			width: 100%;
+			justify-content: center
 		}
 
 			.image.fit img {
 				width: 100%;
+				justify-content: center
 			}
 
 		.image.main {
@@ -3982,12 +3991,13 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 
 	#footer {
 		padding: 6rem 0 4rem 0 ;
-		background: #f2f2f2;
+		background-color: rgba(18, 93, 11, 0.85);
+		padding: 20px;
+		text-align: center;
 	}
 
 		.copyright {
 			color: #bbb;
-			background: #f2f2f2;
 			font-size: 0.9rem;
 			padding: 0 0 2rem 0;
 			text-align: center;
@@ -4099,7 +4109,7 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 				justify-content: center;
 				font-size: 3.5rem;
 				background: #fff;
-				color: #5AA6ED;
+				color: rgba(18, 93, 11, 0.85);
 				width: 8rem;
 				height: 8rem;
 				border-radius: 100%;
@@ -4413,3 +4423,70 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 
 		}
 
+
+		/* Reset do navegador */
+
+/*/Dropdown/*/
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	color: #5AA6ED;
+}
+
+.foter {
+
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+  }
+
+  .footer-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .footer-info {
+	display: column;
+	justify-content: space-between;
+	margin-bottom: 10px;
+  }
+
+  .footer-info p {
+	flex: 1;
+	margin: 0;
+  }
+
+  .footer-developed {
+	font-style: italic;
+	font-size: 0.9em;
+  }
