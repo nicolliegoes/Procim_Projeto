@@ -59,6 +59,7 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	
 /* Box Model */
 
 	*, *:before, *:after {
@@ -126,6 +127,7 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 
 @media screen and (max-width: 1680px) {
 
+	
 	.container.\31 25\25 {
 		width: 100%;
 		max-width: 100rem;
@@ -2375,10 +2377,12 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 			justify-content: center
 		}
 
-			.image.fit img {
-				width: 100%;
-				justify-content: center
-			}
+		.image.fit img {
+			width: 50%;
+			display: block;
+			margin: 0 auto; 
+		}
+		
 
 		.image.main {
 			display: block;
@@ -3817,34 +3821,35 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 
 /* Banner */
 
-	#banner {
-		display: -ms-flexbox;
-		-ms-flex-pack: center;
-		-ms-flex-align: center;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		background-image: url("../../images/pic02.png");
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		border-top: 0;
-		min-height: 100vh;
-		height: 100vh !important;
-		width: 100%;
-		position: relative;
-		text-align: center;
-		overflow: hidden;
-	}
+#banner {
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-image: url("../../images/pic02.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    min-height: 80vh; /* Adjusted the min-height */
+    height: 80vh !important; /* Adjusted the height */
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
 
 		#banner .inner {
 			-moz-transform: scale(1.0);
