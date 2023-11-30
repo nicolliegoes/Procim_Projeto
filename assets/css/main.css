@@ -59,6 +59,9 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	/* Adicione estas regras no final do seu arquivo CSS ou em um arquivo separado */
+
+
 	
 /* Box Model */
 
@@ -95,6 +98,44 @@ width: 48%; /* Define a largura desejada para os itens */
 margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 }
 
+/* Adicione uma regra de mídia para telas menores que 736px */
+@media screen and (max-width: 736px) {
+
+    .box .content {
+        padding: 2rem;
+    }
+
+    /* Reduza a largura máxima das imagens */
+    .image.left, .image.right {
+        max-width: 100%;
+    }
+
+    /* Ajuste o tamanho das imagens dentro da classe .image.fit */
+    .image.fit img {
+        width: 100%;
+    }
+
+    /* Ajuste o tamanho das imagens dentro da classe .image.main */
+    .image.main img {
+        width: 100%;
+    }
+
+    /* Altere o tamanho das imagens dentro dos itens para ocupar a largura total da tela */
+    .container2 .item img {
+        width: 100%;
+    }
+
+    /* Ajuste o layout dos itens para empilhá-los em telas menores */
+    .container2 {
+        flex-direction: column;
+    }
+
+    /* Ajuste o tamanho dos itens para ocupar a largura total da tela */
+    .item {
+        width: 100%;
+    }
+}
+
 
 
 
@@ -125,136 +166,7 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 	width: 80rem;
 }
 
-@media screen and (max-width: 1680px) {
 
-	
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 100rem;
-		min-width: 80rem;
-	}
-
-	.container.\37 5\25 {
-		width: 60rem;
-	}
-
-	.container.\35 0\25 {
-		width: 40rem;
-	}
-
-	.container.\32 5\25 {
-		width: 20rem;
-	}
-
-	.container {
-		width: 80rem;
-	}
-
-}
-
-@media screen and (max-width: 1280px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 81.25rem;
-		min-width: 65rem;
-	}
-
-	.container.\37 5\25 {
-		width: 48.75rem;
-	}
-
-	.container.\35 0\25 {
-		width: 32.5rem;
-	}
-
-	.container.\32 5\25 {
-		width: 16.25rem;
-	}
-
-	.container {
-		width: 65rem;
-	}
-
-}
-
-@media screen and (max-width: 980px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 112.5%;
-		min-width: 90%;
-	}
-
-	.container.\37 5\25 {
-		width: 67.5%;
-	}
-
-	.container.\35 0\25 {
-		width: 45%;
-	}
-
-	.container.\32 5\25 {
-		width: 22.5%;
-	}
-
-	.container {
-		width: 90%;
-	}
-
-}
-
-@media screen and (max-width: 736px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 112.5%;
-		min-width: 90%;
-	}
-
-	.container.\37 5\25 {
-		width: 67.5%;
-	}
-
-	.container.\35 0\25 {
-		width: 45%;
-	}
-
-	.container.\32 5\25 {
-		width: 22.5%;
-	}
-
-	.container {
-		width: 90% !important;
-	}
-
-}
-
-@media screen and (max-width: 480px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 112.5%;
-		min-width: 90%;
-	}
-
-	.container.\37 5\25 {
-		width: 67.5%;
-	}
-
-	.container.\35 0\25 {
-		width: 45%;
-	}
-
-	.container.\32 5\25 {
-		width: 22.5%;
-	}
-
-	.container {
-		width: 90% !important;
-	}
-
-}
 
 /* Grid */
 
@@ -2348,6 +2260,7 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 
 		.image img {
 			display: block;
+			
 		}
 
 		.image.left, .image.right {
@@ -3978,6 +3891,8 @@ margin-bottom: 10px; /* Espaço entre o texto e a imagem */
 			opacity: 1;
 		}
 
+
+		
 /* Main */
 
 	#main {
